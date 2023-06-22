@@ -4,7 +4,7 @@ readme = open('README.md').read()
 
 setup(
     name='genepass',
-    version='0.1',
+    version='0.1.2',
     author=' ny7777',
     author_email='meathouse47@gmail.com',
     url='https://github.com/senya-koku/genepass',
