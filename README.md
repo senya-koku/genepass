@@ -14,7 +14,7 @@ genepass.create_random_password()
 ```
 
 # Option
-
-- strong : DIGITS & CAPITAL_LETTER & SMALL_LETTER
-- god : DIGITS & CAPITAL_LETTER & SMALL_LETTER & SYMBOLS
-- custom : Under construction
+- security_level
+    - strong : DIGITS & CAPITAL_LETTER & SMALL_LETTER
+    - god : DIGITS & CAPITAL_LETTER & SMALL_LETTER & SYMBOLS
+    - custom : Under construction

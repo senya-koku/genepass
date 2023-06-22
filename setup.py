@@ -2,9 +2,13 @@ from setuptools import setup, find_packages
 
 readme = open('README.md').read()
 
+VERSION = '0.1.3'
+
+
+
 setup(
     name='genepass',
-    version='0.1.2',
+    version=VERSION,
     author=' ny7777',
     author_email='meathouse47@gmail.com',
     url='https://github.com/senya-koku/genepass',
