@@ -4,7 +4,7 @@ generating passward randomly!
 
 ----
 # Install
-`pip install odach`
+`pip install genepass`
 
 ----
 # Usage
