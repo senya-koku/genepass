@@ -12,7 +12,11 @@ generating passward randomly!
 ```python
 import genepass
 
-genepass.create_random_password()
+suggest_passwords()
+
+or 
+
+genepass.generate_random_password()
 ```
 
 ----
@@ -25,7 +29,7 @@ genepass.create_random_password()
 - length : int
     -  Number of characters in the generated password
     - allowed : 4-32（default:8）
-    
+
 - 
  
     ----

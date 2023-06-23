@@ -1,6 +1,6 @@
 import random
 
-def create_random_password(security_level='strong',length=8, character_sets=None):
+def generate_random_password(security_level='strong',length=8, character_sets=None):
     """
     security_level:str
         explain：説明条件を勝手に決める
@@ -41,15 +41,14 @@ def create_random_password(security_level='strong',length=8, character_sets=None
     
     #処理
     if security_level=='custom':
+        #制約条件
+        if not isinstance(character_sets, list):
+            raise TypeError("character_sets must be defined.")
         pass_chars = ''.join(character_sets)
         password = ''
         while not all(any(item in password for item in char_set) for char_set in character_sets):
-
             password = ''.join(random.choice(pass_chars) for x in range(length))
 
-        print('Under construction')
-        return None
-        
     elif security_level=='strong':
         #password生成
         character_sets = [DIGITS, CAPITAL_LETTER, SMALL_LETTER]
