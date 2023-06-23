@@ -17,13 +17,15 @@ genepass.create_random_password()
 
 ----
 # Option
-- length
-    - int : Number of characters in the generated password
-    - allowed : 4-32（default:8）
-- security_level
+- security_level : string
     - strong : DIGITS & CAPITAL_LETTER & SMALL_LETTER（default）
     - god    : DIGITS & CAPITAL_LETTER & SMALL_LETTER & SYMBOLS
     - custom : Under construction
- 
+
+- length : int
+    -  Number of characters in the generated password
+    - allowed : 4-32（default:8）
+    
+- 
  
     ----
