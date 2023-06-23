@@ -17,16 +17,27 @@ def create_random_password(length=8, security_level='strong'):
     CAPITAL_LETTER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     SMALL_LETTER = "abcdefghijklmnopqrstuvwxyz"
     SYMBOLS = "!#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"
+    valid_levels = ["strong", "god", "custom"]
+    
     
     #inputの確認
+    #型
     if not isinstance(length, int):
         raise TypeError("length must be an integer.")
     if not isinstance(security_level, str):
-        raise TypeError("security_level must be an integer.")
+        raise TypeError("security_level must be an string.")
+    #制約
+    if not security_level in valid_levels:
+        raise ValueError(f"Invalid security_level. Allowed values are: {', '.join(valid_levels)}.")
+    if length < 4:
+        raise ValueError("Invalid length.  length must be longer than 4.")
+    if length > 32:
+        raise ValueError("Invalid length.  length must be smaller than 32.")
     
     #処理
     if security_level=='custom':
         print('Under construction')
+        return None
         
     elif security_level=='strong':
         #password生成
