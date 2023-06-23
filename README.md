@@ -16,7 +16,7 @@ import genepass
 genepass.suggest_passwords()
 
 #Default
-genepass.suggest_passwords(suggest_num=10, security_level='strong',length=8, character_sets=None)s
+genepass.suggest_passwords(suggest_num=10, security_level='strong',length=8, character_sets=None)
 
 ```
 
