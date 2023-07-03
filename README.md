@@ -1,6 +1,7 @@
 # genepass
 
 generating passward randomly!
+（create password randomly）
 
 ----
 # Install
